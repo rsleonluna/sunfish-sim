@@ -1,0 +1,214 @@
+{
+  "schema": "sunfish-rig/1",
+  "generated_by": "src/gen_sunfish.py",
+  "glb": "sunfish.glb",
+  "units": {
+    "length": "metre",
+    "angle": "degree"
+  },
+  "coordinate_frame": {
+    "origin": "design waterline, on centreline, at the max-beam station",
+    "x": "forward (bow)",
+    "y": "to port",
+    "z": "up",
+    "handedness": "right",
+    "note": "These are Blender-frame values. The GLB is written with export_yup=True, so a glTF consumer sees the same asset rotated to Y-up; swap accordingly before comparing."
+  },
+  "hull": {
+    "loa": 4.19,
+    "beam": 1.24,
+    "draft_canoe_body": 0.112,
+    "subsurf_levels": 2,
+    "note": "extents are the exported cage, Subsurf unapplied"
+  },
+  "rig": {
+    "mast_length": 3.048,
+    "mast_rake_deg": 3.0,
+    "mast_foot": [
+      0.7,
+      0.0,
+      0.250042
+    ],
+    "mast_top": [
+      0.54048,
+      0.0,
+      3.293865
+    ],
+    "yard_length": 4.1656,
+    "boom_length": 4.1656,
+    "apex_angle_deg": 65.0432,
+    "boom_rise_deg": 0.0,
+    "gooseneck_height": 0.4,
+    "tack": [
+      1.771144,
+      0.0,
+      0.649494
+    ],
+    "derived": {
+      "halyard_along_yard": 2.916716,
+      "gooseneck_along_boom": 1.092078
+    }
+  },
+  "sail": {
+    "luff": 4.051296,
+    "foot": 4.051296,
+    "leech": 4.356095,
+    "area_built": 7.440227,
+    "area_nominal": 7.44,
+    "head": [
+      0.061761,
+      0.0,
+      4.322505
+    ],
+    "tack": [
+      1.771144,
+      0.0,
+      0.649494
+    ],
+    "clew": [
+      -2.280152,
+      0.0,
+      0.649494
+    ],
+    "tip_cut": 0.02744,
+    "throat_cut": 0.0,
+    "roach": 0.0,
+    "shape_key": {
+      "name": "Camber",
+      "min": -1.0,
+      "max": 1.0,
+      "exported_at": 1.0,
+      "draft_max_at": 0.38,
+      "twist_factor": 0.55
+    },
+    "vertex_groups": [
+      "luff_lace",
+      "foot_lace",
+      "leech_free"
+    ]
+  },
+  "foils": {
+    "daggerboard": {
+      "root_chord": 0.255,
+      "tip_chord": 0.215,
+      "span": 0.76,
+      "thickness_ratio": 0.12,
+      "sweep": 0.045,
+      "planform_area": 0.1786,
+      "aspect_ratio": 3.234043,
+      "pivot": [
+        -0.1,
+        0.0,
+        0.2
+      ]
+    },
+    "rudder": {
+      "root_chord": 0.23,
+      "tip_chord": 0.165,
+      "span": 0.56,
+      "thickness_ratio": 0.12,
+      "sweep": 0.075,
+      "planform_area": 0.1106,
+      "aspect_ratio": 2.835443,
+      "pivot": [
+        -1.99,
+        0.0,
+        0.16
+      ]
+    }
+  },
+  "points": {
+    "pivot_board": [
+      -0.1,
+      0.0,
+      0.2
+    ],
+    "pivot_gooseneck": [
+      0.679066,
+      0.0,
+      0.649494
+    ],
+    "pivot_rudder": [
+      -1.99,
+      0.0,
+      0.16
+    ],
+    "point_clew": [
+      -2.280152,
+      0.0,
+      0.649494
+    ],
+    "point_halyard": [
+      0.54048,
+      0.0,
+      3.293865
+    ],
+    "point_mastfoot": [
+      0.7,
+      0.0,
+      0.250042
+    ]
+  },
+  "buoyancy_probes": {
+    "probe_00": [
+      1.781,
+      0.10406,
+      0.100273
+    ],
+    "probe_01": [
+      1.781,
+      0.0,
+      0.08368
+    ],
+    "probe_02": [
+      1.781,
+      -0.10406,
+      0.100594
+    ],
+    "probe_03": [
+      0.663667,
+      0.336508,
+      -0.032099
+    ],
+    "probe_04": [
+      0.663667,
+      0.0,
+      -0.068177
+    ],
+    "probe_05": [
+      0.663667,
+      -0.336508,
+      -0.032175
+    ],
+    "probe_06": [
+      -0.453667,
+      0.405219,
+      -0.066336
+    ],
+    "probe_07": [
+      -0.453667,
+      0.0,
+      -0.111957
+    ],
+    "probe_08": [
+      -0.453667,
+      -0.405219,
+      -0.066335
+    ],
+    "probe_09": [
+      -1.571,
+      0.331466,
+      -0.036266
+    ],
+    "probe_10": [
+      -1.571,
+      0.0,
+      -0.071464
+    ],
+    "probe_11": [
+      -1.571,
+      -0.331466,
+      -0.036171
+    ]
+  }
+}
