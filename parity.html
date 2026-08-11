@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sunfish-sim — CPU/GPU wave parity</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 24px;
+        background: #0d1b26;
+        color: #cfe3ef;
+        font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+      h1 {
+        margin: 0 0 16px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      pre {
+        margin: 0;
+        padding: 16px;
+        border-left: 3px solid #445a68;
+        background: rgba(255, 255, 255, 0.04);
+        white-space: pre-wrap;
+      }
+      pre.pass {
+        border-left-color: #22dd66;
+      }
+      pre.fail {
+        border-left-color: #ff3355;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CPU/GPU wave parity — sim-core/gerstner.ts vs water/gerstner.glsl.ts</h1>
+    <pre id="output"></pre>
+    <script type="module" src="/src/web/__tests__/parity-entry.ts"></script>
+  </body>
+</html>

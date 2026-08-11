@@ -7,6 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "parity": "node scripts/parity.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

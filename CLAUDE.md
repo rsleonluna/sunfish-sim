@@ -9,11 +9,17 @@ Anything that touches a renderer lives in `src/web/`.
 
 ## Coordinate + unit contract
 - Meters, seconds, radians, kilograms. SI throughout.
-- glTF is Y-up: +Y up, boat's bow along -Z, starboard +X.
+- Boat frame: +Y up, boat's bow along -Z, starboard +X. Right-handed.
+- The assets are authored in two OTHER frames and must be normalized on load.
+  `sunfish-rig.json` is Blender-frame (+X bow, +Y port, +Z up). `sunfish.glb`
+  was exported yup, so glTF sees it as +X bow, +Y up, +Z starboard. Only
+  `src/sim-core/rig.ts` knows this; it converts everything to boat frame, and
+  `src/web/Boat.tsx` yaws the glTF scene by `GLTF_TO_BOAT_YAW`. Nothing else
+  may touch a raw asset coordinate.
 - Freshwater: rho = 1000 kg/m^3. NOT 1025. Tawas Bay is Lake Huron.
 - g = 9.81
 - Rig pivots and buoyancy probes are read from
-  public/models/sunfish_rig.json at load. Never hardcode a position that
+  public/models/sunfish-rig.json at load. Never hardcode a position that
   exists in that file.
 
 ## Setting: Tawas Bay, Lake Huron

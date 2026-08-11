@@ -1,12 +1,3 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
 # Dependencies
 node_modules
 
@@ -21,6 +12,22 @@ node_modules/.vite
 *.tsbuildinfo
 coverage
 .vitest
+
+# Headless browser scratch.
+# `npm run parity` drives a real Chrome to get a WebGL context and needs a
+# user-data dir for it. It currently lands under node_modules, which is already
+# ignored, but pin the names too so a relocated profile cannot get committed.
+.parity-chrome
+chrome-profile*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Env
 .env
@@ -39,5 +46,5 @@ Thumbs.db
 *.sln
 *.sw?
 
-# Claude Code local settings
+# Claude Code: share project settings, keep personal overrides local
 .claude/settings.local.json
